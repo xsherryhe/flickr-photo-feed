@@ -1,6 +1,5 @@
 
 function enablePrevNextArrows() {
-  console.log('called')
   document.querySelectorAll('.arrow').forEach(arrow => {
     arrow.addEventListener('click', changePhotos);
   })
