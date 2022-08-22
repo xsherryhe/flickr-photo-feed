@@ -1,0 +1,20 @@
+.photo-with-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.arrow {
+  font-size: 6rem;
+  color: gray;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

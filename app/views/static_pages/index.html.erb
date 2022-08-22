@@ -8,14 +8,21 @@ For example, <code>196350904@N06</code>.
   <%= form.label :flickr_user_id, 'Flickr User ID:'%>
   <%= form.text_field :flickr_user_id, value: @flickr_user_id %>
   <%= form.submit 'See Photos' %>
+  <%= flash[:flickr_user_error] %>
 <% end %>
 
 <p>Alternatively: <%= link_to 'See Random Recent Photos from Flickr', static_pages_path(get_recent: true) %></p>
 
 <% if @photos %>
-  <div class="photos">
-    <% @photos.each do |photo| %>
-      <div class="image"><%= image_tag "https://live.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg" %></div>
-    <% end %>
+  <div class="photo-with-arrows">
+    <div class="arrow previous hidden"><</div>
+    <div class="photos">
+      <% @photos.each_with_index do |photo, i| %>
+        <div class="photo <%= i == 0 ? '' : 'hidden' %>" id="photo<%= i %>">
+          <%= image_tag Flickr.url(photo) %>
+        </div>
+      <% end %>
+    </div>
+    <div class="arrow next">></div>
   </div>
 <% end %>
