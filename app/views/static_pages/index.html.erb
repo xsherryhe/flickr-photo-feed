@@ -15,7 +15,7 @@ For example, <code>196350904@N06</code>.
 
 <% if @photos %>
   <div class="photo-with-arrows">
-    <div class="arrow previous hidden"><</div>
+    <div class="arrow previous hidden-with-space"><</div>
     <div class="photos">
       <% @photos.each_with_index do |photo, i| %>
         <div class="photo <%= i == 0 ? '' : 'hidden' %>" id="photo<%= i %>">

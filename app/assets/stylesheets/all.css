@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
 }
 
 .arrow {
@@ -11,10 +10,29 @@
   cursor: pointer;
 }
 
+.photos {
+  width: 40rem;
+  height: 30rem;
+  margin: 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.photo img {
+  max-width: 40rem;
+  max-height: 30rem;
+}
+
 img {
   display: block;
 }
 
 .hidden {
   display: none;
+}
+
+.hidden-with-space {
+  visibility: hidden;
 }
