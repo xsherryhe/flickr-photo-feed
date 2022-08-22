@@ -1,24 +1,6 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project is a photo feed using the Flickr API. It is built using Ruby on Rails.
 
-Things you may want to cover:
+The project primarily demonstrates concepts related to usage of an external API to provide a service, including use of external gems to manage API requests, keys, and secrets.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is currently in progress.
