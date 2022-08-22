@@ -8,6 +8,16 @@ p {
   margin-right: 12rem;
 }
 
+input {
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+}
+
+input[type="submit"] {
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+}
+
 .photo-with-arrows {
   display: flex;
   justify-content: center;
