@@ -1,3 +1,13 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  padding: 1rem 3rem;
+  background-color: rgb(176, 193, 255);
+}
+
+p {
+  margin-right: 12rem;
+}
+
 .photo-with-arrows {
   display: flex;
   justify-content: center;
@@ -11,8 +21,8 @@
 }
 
 .photos {
-  width: 40rem;
-  height: 30rem;
+  width: 60vw;
+  height: 60vh;
   margin: 0 2rem;
   display: flex;
   justify-content: center;
@@ -21,8 +31,8 @@
 }
 
 .photo img {
-  max-width: 40rem;
-  max-height: 30rem;
+  max-width: 60vw;
+  max-height: 60vh;
 }
 
 img {
