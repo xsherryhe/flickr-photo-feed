@@ -22,6 +22,6 @@ For example, <code>196350904@N06</code>.
         </div>
       <% end %>
     </div>
-    <div class="arrow next">></div>
+    <div class="arrow next <%= @photos.length == 1 ? 'hidden' : '' %>">></div>
   </div>
 <% end %>
